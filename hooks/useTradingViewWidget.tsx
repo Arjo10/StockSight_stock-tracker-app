@@ -1,4 +1,4 @@
-'use Client';
+'use client';
 import React, { RefObject } from 'react'
 import { useEffect,useRef } from 'react';
 
