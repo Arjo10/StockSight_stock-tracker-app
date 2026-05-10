@@ -1,6 +1,7 @@
 'use client';
 
 import { CountrySelectField } from '@/components/forms/CountrySelectField';
+import FooterLink from '@/components/forms/FooterLink';
 import InputField from '@/components/forms/InputField';
 import SelectField from '@/components/forms/SelectField';
 import { INVESTMENT_GOALS, PREFERRED_INDUSTRIES, RISK_TOLERANCE_OPTIONS } from '@/lib/constants';
@@ -106,6 +107,8 @@ const SignUp = () => {
       <button type="submit" disabled={isSubmitting} className="yellow-btn w-full mt-5" >
             {isSubmitting? 'Creating Acccount': 'Start Your Investing Journey'}
       </button>
+
+      <FooterLink text="Already have an account?" linkText="Sign in" href="/sign-in" />
      </form>
     </>
   )
